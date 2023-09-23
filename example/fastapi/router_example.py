@@ -6,7 +6,7 @@ import uvicorn
 
 app = FastAPI()
 
-app.include_rssouter(ncf)
+app.include_router(ncf)
 app.include_router(nfm)
 
 @app.get('/')
